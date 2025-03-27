@@ -49,7 +49,6 @@ int _printf(const char *format, ...)
 			{
 				print_number(va_arg(args, int));
 			}
-			}
 			else if (*format == '%')
 			{
 				count += _putchar('%');
@@ -59,6 +58,7 @@ int _printf(const char *format, ...)
 				count += _putchar('%');
 				count += _putchar(*format);
 			}
+		}
 		}
 		else
 		{
