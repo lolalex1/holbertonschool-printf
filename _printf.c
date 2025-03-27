@@ -71,7 +71,8 @@ int _printf(const char *format, ...)
 			{
 				count += _putchar('%');
 			}
-			else if (*format == 'i')
+			// You can check for 'd' as you would check for 'i' -alex
+			else if (*format == 'i' || *format == 'd')
 			{
 				count += print_number(va_arg(args, int));
 			}
