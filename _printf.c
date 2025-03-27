@@ -61,6 +61,8 @@ int _printf(const char *format, ...)
 			else if (*format == 's')
 			{
 				s = va_arg(args, char *);
+				if (s == NULL)
+					s = "(null)";
 				while (*s)
 				{
 					count += _putchar(*s);
