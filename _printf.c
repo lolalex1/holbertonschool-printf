@@ -21,12 +21,12 @@ int print_number(int n)
 
 		if (n < 0)
 		{
-				count += _putchar('-');
-				num = -n;
+			count += _putchar('-');
+			num = -n;
 		}
 		else
 		{
-				num = n;
+			num = n;
 		}
 
 		if (num / 10)
